@@ -31,6 +31,15 @@ public class Person {
         prntLn(count + "Person was created");
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", secondName='" + secondName + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
     private static void  prntLn(String out) {
         System.out.println(out);
     }
